@@ -1,0 +1,52 @@
+{
+  "name": "scratchproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack serve --open & NODE_ENV=development nodemon server/server.js",
+    "seed": "node ./util/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhotogenicusCJJS/ScratchProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhotogenicusCJJS/ScratchProject/issues"
+  },
+  "homepage": "https://github.com/PhotogenicusCJJS/ScratchProject#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "node-fetch": "^3.1.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
+    "react": "^17.0.2",
+    "react-datepicker": "^4.6.0",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "eslint": "^7.17.0",
+    "html-webpack-plugin": "^5.5.0",
+    "moment": "^2.29.1",
+    "sass": "^1.48.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  }
+}
